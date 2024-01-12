@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans";
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #EEF5FF;
+}
+
+#nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: #4942E4; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#nav-part2 h4{
+    font-size: 15px;
+    font-weight: 600;
+    color: #11235A;
+}
+
+#nav-part2 h4 span {
+    color: rgb(126, 126, 126);
+    margin-left: 25px;
+}
+
+.gola{
+    height: 22px;
+    width: 22px;
+    background-color:black;
+    border-radius: 50%;
+}
+
+#nav2 {
+    height: 50px;
+    width: 100%;
+    /* background-color: #C6CF9B; */
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    gap: 90px;
+}
+
+#nav2 h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 450;
+}
+
+#content {
+    height: calc(100% - 150px);
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+#text-content {
+    height: 40%;
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar {
+    background-color: transparent;
+    height: 7px;
+}
+
+#text-content::-webkit-scrollbar-thumb {
+    background-color: #3B3486;
+}
+
+.elem {
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.elem h1 {
+    /* font-size: 130px; */
+    font-size: 10vw;
+    white-space: nowrap;
+    font-weight: 200;
+}
+
+#img-content{
+    height: 65%;
+    width: 100%; 
+    display: flex;
+    overflow-x: auto;   
+}
+
+#img-content::-webkit-scrollbar{
+    display: none;
+}
+
+#img-content img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#img-content img:nth-child(3){
+    object-position: left;
+}
+
